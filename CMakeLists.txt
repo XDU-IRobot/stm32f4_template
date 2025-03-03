@@ -65,6 +65,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
         stm32cubemx
-        rm
+        
         # Add user defined libraries
+        ${PROJECT_NAME}_libs
 )
